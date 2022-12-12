@@ -22,6 +22,8 @@ for i in range(pdfReader.numPages):
 
     for char in string.punctuation:
         text = text.replace(char, '')
+    text = text.replace('”', "")
+    text = text.replace('“', "")
 
     arr = text.lower().split(" ")
     for j in arr:
